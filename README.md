@@ -9,15 +9,8 @@ Welcome to the data and code repository for The Ants CSBB team.
 - Code related to the ML pipeline can be found in the directory `src` in a jupyter notebook.
 - The trained models used for the analysis are saved in the `trained_models` directory.
 
-## ML Pipeline for H&E stained Lymph Node Images
 
-This repo contains a simple machine learning model trained Using images from the [PCam](https://github.com/basveeling/pcam) dataset. This model was used to extract areas of interest to image from patient lymph node slides.
-
-## Script For Detecting Interest Points in Multiplex Files
-
-In the `src` directory there is a short python script that can be used to identify and visualize regions of interest in the images taken by the Leica SP8 of the multiplex.
-
-### Installation
+## Installation
 
 It is recommended to use a package manager such as Anaconda or [venv](https://docs.python.org/3/library/venv.html) when running the project. To create, activate, and install the requirements in a python virtual environment run the following commands in the terminal: 
 
@@ -38,6 +31,13 @@ pip install -r requirements.txt
 
 This project uses [Ruff](https://docs.astral.sh/ruff/) to format and lint code. In order to format code, run `ruff format`. To check codestyle, run `ruff check` or `ruff check --fix` to fix any fixable errors.
 
-### Running the Pipeline
+Docstrings should follow [Numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html) style.
 
-Follow the instructions in the `pipeline.ipynb` jupyter notebook to train the machine learning model and run the entire pipeline.
+
+## ML Pipeline for H&E stained Lymph Node Images
+
+This repo contains a simple machine learning model trained Using images from the [PCam](https://github.com/basveeling/pcam) dataset. This model was used to extract areas of interest to image from patient lymph node slides.
+
+## Script For Detecting Interest Points in Multiplex Files
+
+In the `src` directory there is a short python script as well as Matlab scripts that can be used to identify and visualize regions of interest in the images taken by the Leica SP8 of the multiplex.
